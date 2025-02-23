@@ -12,6 +12,16 @@ let valueB;
 let operator;
 
 let operate = (a, b, op) => {
-    // switch statement for operators and call above functions based on said operator
+    if (op === "+") {
+        return add(a, b);
+    } else if (op === "-") {
+        return subtract(a, b);
+    } else if (op === "*") {
+        return multiply(a, b);
+    } else if (op === "/") {
+        return divide(a, b);
+    } else {
+        console.log("No valid operator")
+    }
 
 }
