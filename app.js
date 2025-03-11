@@ -34,7 +34,7 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
         let value = e.target.value;
-        console.log("VAL", value);
+        // console.log("VAL", value);
         handleInput(value);
     })
 })
@@ -79,7 +79,7 @@ let handleInput = (input) => {
         default: // when a number is pressed
             currentInput += input;
     }
-    console.log(`acc: ${accumulatedValue}, curr: ${currentInput}, operator: ${operator}`);
+    // console.log(`acc: ${accumulatedValue}, curr: ${currentInput}, operator: ${operator}`);
     updateDisplay();
 }
 
